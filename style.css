@@ -1,0 +1,64 @@
+/*header*/
+header {
+  background-color: black;
+  margin-bottom: 40px;
+  display: block;
+}
+/*heading h1*/
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 56px;
+}
+/*body*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*set all images to be a width of 100%*/
+.img {
+  width: 100%;
+}
+img.rounded {
+  border-radius: 10px;
+}
+/*styled links*/
+a:link {
+  color: #FF0000;
+}
+a:visited {
+  color: #00FF00;
+}
+a:hover {
+  color: #FF00FF;
+}
+a:active {
+  color: #0000FF;
+}
+/* Groups & Items  (Mobile First) */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+/*Groups and Items (deskttop)*/
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+.group {
+    flex-direction: row;
+  }
+}
